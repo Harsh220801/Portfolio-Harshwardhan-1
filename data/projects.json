@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Retail Pulse",
+    "description": "A demand forecasting study that helps a retail team plan inventory around seasonal shifts.",
+    "tags": ["ML", "Visualization"],
+    "tech": "Python · Prophet · Power BI",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=80",
+    "repo": "https://github.com",
+    "demo": "https://www.kaggle.com"
+  },
+  {
+    "title": "Churn Signals",
+    "description": "An interpretable classification pipeline for spotting customers who may need attention.",
+    "tags": ["ML", "SQL"],
+    "tech": "Python · Scikit-learn · SQL",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80",
+    "repo": "https://github.com",
+    "demo": "https://www.kaggle.com"
+  },
+  {
+    "title": "City Stories",
+    "description": "An exploratory visual essay about how commute time changes across a growing city.",
+    "tags": ["Visualization", "SQL"],
+    "tech": "SQL · Pandas · Tableau",
+    "image": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=80",
+    "repo": "https://github.com",
+    "demo": "https://public.tableau.com"
+  },
+  {
+    "title": "Review, Reframed",
+    "description": "A natural language experiment that turns thousands of product reviews into themes.",
+    "tags": ["ML"],
+    "tech": "Python · NLP · TF-IDF",
+    "image": "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1000&q=80",
+    "repo": "https://github.com",
+    "demo": "https://www.kaggle.com"
+  }
+]

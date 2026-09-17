@@ -1,0 +1,1 @@
+Add your real resume PDF here as Harshvardhan-Resume.pdf. Replace the placeholder Unsplash portrait and project thumbnails in index.html and data/projects.json before publishing.
