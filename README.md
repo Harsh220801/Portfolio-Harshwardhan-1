@@ -26,3 +26,12 @@ npm run dev
 ```
 
 Open the Vite URL shown in the terminal. Use `npm run build` to create a production build.
+
+## Deploy to Netlify
+
+The repository's `netlify.toml` installs locked dependencies with
+`npm ci --include=dev` before running `npm run build`, and sets the publish
+directory to `dist`. This also supports CLI deployments from a clean checkout
+where dependencies have not yet been installed. JavaScript dependencies are
+declared in `package.json`, with resolved versions recorded in `package-lock.json`.
+Do not add npm dependencies to a Python `requirements.txt` file.
