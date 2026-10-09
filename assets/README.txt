@@ -1,1 +1,1 @@
-Add your real resume PDF here as Harshvardhan-Resume.pdf. Replace the placeholder Unsplash portrait and project thumbnails in index.html and data/projects.json before publishing.
+Your résumé is stored at personalized/social/Resume.pdf. The profile portrait is at personalized/profile/portrait.png. Add project screenshots under personalized/projects/ and reference them in data/projects.json.

@@ -10,13 +10,9 @@ import {
   Braces,
   Code2,
   ExternalLink,
-  Layers3,
   LineChart,
-  Mail,
-  MapPin,
   Menu,
   Moon,
-  Send,
   Sparkles,
   Sun,
   Wrench,
@@ -24,22 +20,16 @@ import {
 } from "lucide-react";
 import projectData from "../data/projects.json";
 
-const roles = ["Data Engineer", "Data Scientist", "ML Enthusiast"];
+const roles = ["Aspiring Data Analyst", "Python & Power BI", "Learning Machine Learning"];
 const skills = [
-  ["01", Braces, "Programming", ["Python", "SQL", "R"]],
+  ["01", Braces, "Programming", ["Python", "SQL"]],
   [
     "02",
-    Layers3,
-    "Libraries",
-    ["Pandas", "NumPy", "Scikit-learn", "TensorFlow", "Seaborn"],
+    Wrench,
+    "Tools",
+    ["Power BI", "Jupyter", "Git/GitHub", "VS Code", "Cloud Computing", "AWS"],
   ],
-  ["03", Wrench, "Tools", ["Jupyter", "Git / GitHub", "VS Code", "Power BI"]],
-  [
-    "04",
-    LineChart,
-    "Concepts",
-    ["Machine learning", "Statistics", "EDA", "Visualisation"],
-  ],
+  ["03", LineChart, "Statistics", ["Statistics", "Probability"]],
 ];
 
 function Reveal({ children, delay = false, className = "" }) {
@@ -59,8 +49,8 @@ function Label({ number, children }) {
 }
 function Brand() {
   return (
-    <a className="brand" href="#home" aria-label="Harshvardhan home">
-      <span>HV</span>
+    <a className="brand" href="#home" aria-label="Harshwardhan home">
+      <span>HP</span>
       <i>.</i>
     </a>
   );
@@ -89,7 +79,7 @@ function Header({ dark, setDark }) {
             ["Skills", "#skills"],
             ["Projects", "#projects"],
             ["Experience", "#experience"],
-            ["Journey", "#education"],
+            ["Learning", "#education"],
             ["Resume", "#resume"],
           ].map(([label, href]) => (
             <a key={href} href={href} onClick={close}>
@@ -130,26 +120,26 @@ function Hero() {
     <section className="hero section container" id="home">
       <Reveal className="hero-copy">
         <p className="eyebrow">
-          <span className="status-dot" /> Open to opportunities · India
+          <span className="status-dot" /> Data analytics · Python · Power BI
         </p>
         <h1>
-          Curious mind.
+          Real data.
           <br />
-          <em>Useful models.</em>
+          <em>Clearer insights.</em>
         </h1>
         <p className="hero-role">
           {role}
           <span className="cursor">|</span>
         </p>
         <p className="hero-intro">
-          I’m <strong>Harshvardhan</strong>, a Data Engineer who builds reliable
-          pipelines and turns complex operational data into decisions people can
-          act on.
+          I’m <strong>Harshwardhan</strong>, an aspiring data analyst exploring
+          customer, HR, and sales data with Python and Power BI. I turn raw
+          datasets into clear reports and useful findings.
         </p>
         <div className="hero-actions">
           <a
             className="button button-primary"
-            href="/assets/Harshvardhan-Resume.pdf"
+            href="/assets/personalized/social/Resume.pdf"
             download
           >
             Download resume <ArrowDownToLine />
@@ -159,35 +149,29 @@ function Hero() {
           </a>
         </div>
         <div className="social-row" aria-label="Social links">
-          <a href="https://www.linkedin.com" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/harshwardhanpatil2208" aria-label="LinkedIn">
             <BriefcaseBusiness />
           </a>
-          <a href="https://github.com" aria-label="GitHub">
+          <a href="https://github.com/Harsh220801" aria-label="GitHub">
             <Code2 />
-          </a>
-          <a href="https://www.kaggle.com" aria-label="Kaggle">
-            <span className="kaggle-icon">K</span>
-          </a>
-          <a href="mailto:hello@example.com" aria-label="Email">
-            <Mail />
           </a>
         </div>
       </Reveal>
       <Reveal delay className="hero-visual">
         <div className="portrait-frame">
           <img
-            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=900&q=85"
-            alt="Placeholder portrait of Harshvardhan"
+            src="/assets/personalized/profile/portrait.png"
+            alt="Portrait of Harshwardhan"
           />
         </div>
         <div className="data-note note-one">
           <span>currently learning</span>
-          <strong>Deep learning</strong>
+          <strong>Machine learning</strong>
           <BrainCircuit />
         </div>
         <div className="data-note note-two">
-          <span>availability</span>
-          <strong>2024 — ∞</strong>
+          <span>project focus</span>
+          <strong>Real datasets</strong>
           <Sparkles />
         </div>
         <div className="hero-orbit orbit-one" />
@@ -215,19 +199,19 @@ function About() {
         </Reveal>
         <Reveal delay className="about-body">
           <p>
-            I’m a recent graduate building a foundation across statistics,
-            machine learning, and software development. I like the full journey:
-            asking a better question, preparing imperfect data, testing an idea,
-            and communicating what the result actually means.
+            I’m developing my data analytics practice with Python, SQL, Power BI,
+            and statistical foundations. My public projects explore customer
+            shopping trends, HR attendance, and Amazon sales, combining data
+            preparation with clear reporting and visualisation.
           </p>
           <p>
-            Outside notebooks, you’ll find me reading about responsible AI,
-            recreating dashboards, or explaining a complex idea with a very
-            simple sketch.
+            I’m currently learning machine learning and building on my skills in
+            statistics and probability to move from describing data toward
+            predictive analysis.
           </p>
           <a
             className="inline-link"
-            href="/assets/Harshvardhan-Resume.pdf"
+            href="/assets/personalized/social/Resume.pdf"
             target="_blank"
             rel="noreferrer"
           >
@@ -237,10 +221,10 @@ function About() {
       </div>
       <div className="facts-grid reveal">
         {[
-          ["01", "Degree in", "Computer Science"],
-          ["12+", "Projects &", "case studies"],
-          ["04", "Core tools I", "work with daily"],
-          ["∞", "Questions still", "worth asking"],
+          ["03", "Public GitHub", "projects"],
+          ["02", "Power BI", "reports"],
+          ["01", "Python sales", "analysis"],
+          ["ML", "Currently", "learning"],
         ].map(([value, first, second]) => (
           <div key={value}>
             <strong>{value}</strong>
@@ -291,62 +275,94 @@ function Skills() {
 }
 
 function Experience() {
+  const experiences = [
+    {
+      title: "GET – Electrical & Electronics Maintenance",
+      company: "Bharat Forge Limited",
+      location: "Pune, India",
+      points: [
+        "Worked across automation, passenger car line, and robotics line automation systems at Bharat Forge.",
+        "Performed preventive maintenance (PM) and troubleshooting on FANUC robots to ensure line uptime.",
+        "Managed and processed structured and unstructured data with high accuracy and consistency.",
+        "Generated and automated reports using advanced MS Excel features and maintained documentation while collaborating with cross-functional teams.",
+      ],
+    },
+    {
+      title: "Data Analyst",
+      company: "TAN Engineers",
+      location: "Pune, India",
+      points: [
+        "Performed data analysis using Excel to support production and maintenance reporting.",
+        "Created MIS reports and Power BI dashboards to track performance metrics.",
+        "Carried out data cleaning, validation, and visualization for operational data.",
+        "Tracked KPIs and conducted performance analysis to support decision-making.",
+      ],
+    },
+  ];
+
   const highlights = [
     [
       "01",
-      "Pipeline architecture",
-      "Designed and maintained batch and incremental pipelines that keep reporting data accurate, traceable, and ready on schedule.",
+      "Customer shopping trends",
+      "Built a Power BI report with visual summaries of shopping patterns, including age and gender trends.",
     ],
     [
       "02",
-      "Operational insight",
-      "Partnered with cross-functional teams to turn production and business requirements into measurable data products.",
+      "HR attendance",
+      "Created a Power BI analytics report using a masked 2022–2023 attendance workbook.",
     ],
     [
       "03",
-      "Quality by default",
-      "Introduced validation checks, documentation, and monitoring habits that make trusted data easier to scale.",
+      "Amazon sales analysis",
+      "Used Python to clean sales data and visualize order quantities, categories, sizes, and sales patterns.",
     ],
   ];
+
   return (
     <section className="experience section" id="experience">
       <div className="container">
         <Label number="03">Experience</Label>
         <div className="experience-header reveal">
           <div>
-            <p className="eyebrow">2020 — Present · Pune, India</p>
+            <p className="eyebrow">Professional background</p>
             <h2>
-              Building the data
+              From operations to
               <br />
-              <em>behind better work.</em>
+              <em>data-driven decisions.</em>
             </h2>
           </div>
           <div className="experience-company">
-            <span className="company-mark">BF</span>
+            <span className="company-mark">EX</span>
             <div>
-              <strong>Data Engineer</strong>
-              <small>Bharat Forge</small>
+              <strong>Work history</strong>
+              <small>2 roles</small>
             </div>
           </div>
         </div>
         <div className="experience-body">
           <Reveal className="experience-summary">
             <p>
-              For 4+ years, I’ve worked across data engineering and analytics at
-              Bharat Forge, designing dependable data foundations for
-              manufacturing and business teams.
+              My professional experience blends industrial maintenance with data
+              analysis and reporting. I’ve worked with automation systems,
+              Excel-based reporting, Power BI dashboards, and KPI tracking in
+              operational environments.
             </p>
-            <a className="inline-link" href="#contact">
-              Let’s discuss data <ArrowUpRight />
+            <a className="inline-link" href="#projects">
+              Explore projects <ArrowUpRight />
             </a>
           </Reveal>
           <div className="experience-points reveal reveal-delay">
-            {highlights.map(([number, title, text]) => (
-              <div className="experience-point" key={number}>
-                <span>{number}</span>
+            {experiences.map((experience, index) => (
+              <div className="experience-point" key={experience.title}>
+                <span>{`0${index + 1}`}</span>
                 <div>
-                  <h3>{title}</h3>
-                  <p>{text}</p>
+                  <h3>{experience.title}</h3>
+                  <p>
+                    <strong>{experience.company}</strong> · {experience.location}
+                  </p>
+                  {experience.points.map((point) => (
+                    <p key={point}>{point}</p>
+                  ))}
                 </div>
               </div>
             ))}
@@ -354,27 +370,27 @@ function Experience() {
         </div>
         <div className="experience-stats reveal">
           <div>
-            <strong>4+</strong>
+            <strong>2</strong>
             <span>
-              years of
+              professional
               <br />
-              experience
+              roles
             </span>
           </div>
           <div>
-            <strong>24/7</strong>
+            <strong>3</strong>
             <span>
-              reliable data
+              public GitHub
               <br />
-              mindset
+              projects
             </span>
           </div>
           <div>
-            <strong>1</strong>
+            <strong>ML</strong>
             <span>
-              focus: useful
+              currently
               <br />
-              outcomes
+              learning
             </span>
           </div>
         </div>
@@ -394,30 +410,24 @@ function Projects() {
       <Label number="04">Selected work</Label>
       <Reveal className="projects-heading">
         <h2>
-          Small experiments,
+            Three projects,
           <br />
-          <em>real-world intent.</em>
+            <em>real datasets.</em>
         </h2>
-        <p>Each project is a chance to make a fuzzy problem more legible.</p>
+        <p>Customer shopping, HR attendance, and sales analysis built with Python and Power BI.</p>
       </Reveal>
       <div
         className="filter-row reveal"
         role="group"
         aria-label="Filter projects"
       >
-        {["All", "ML", "Visualization", "SQL"].map((item) => (
+        {["All", ...new Set(projectData.flatMap((project) => project.tags))].map((item) => (
           <button
             key={item}
             className={`filter ${filter === item ? "active" : ""}`}
             onClick={() => setFilter(item)}
           >
-            {item === "All"
-              ? "All work"
-              : item === "ML"
-                ? "Machine learning"
-                : item === "Visualization"
-                  ? "Visualisation"
-                  : item}
+            {item === "All" ? "All work" : item}
           </button>
         ))}
       </div>
@@ -448,9 +458,11 @@ function Projects() {
               <a href={project.repo} target="_blank" rel="noreferrer">
                 GitHub repo <ArrowUpRight />
               </a>
-              <a href={project.demo} target="_blank" rel="noreferrer">
-                Live notebook <ExternalLink />
-              </a>
+              {project.demo && (
+                <a href={project.demo} target="_blank" rel="noreferrer">
+                  Live demo <ExternalLink />
+                </a>
+              )}
             </div>
           </article>
         ))}
@@ -463,59 +475,45 @@ function Journey() {
   return (
     <section className="journey section" id="education">
       <div className="container">
-        <Label number="05">My journey</Label>
+        <Label number="05">Education & learning</Label>
         <div className="journey-grid">
           <div className="timeline reveal">
             <h2>
-              Learning by
+              Educational
               <br />
-              <em>doing.</em>
+              <em>qualifications.</em>
             </h2>
             <div className="timeline-item">
-              <span className="timeline-year">2020 — 2024</span>
+              <span className="timeline-year">Jun 2024</span>
               <div>
-                <h3>B.Tech · Computer Science</h3>
-                <p>Placeholder University, India</p>
-                <small>
-                  Coursework: Statistics · DBMS · Algorithms · Artificial
-                  Intelligence
-                </small>
+                <h3>B.E. in Electronics & Telecommunication Engineering</h3>
+                <p>Sinhgad Institute of Technology & Science</p>
+                <small>SGPA: 6.55</small>
               </div>
             </div>
             <div className="timeline-item">
-              <span className="timeline-year">2023</span>
+              <span className="timeline-year">Aug 2021</span>
               <div>
-                <h3>Data Science Intern</h3>
-                <p>Placeholder Analytics Lab</p>
-                <small>
-                  Built reports and experiments around customer behaviour.
-                </small>
+                <h3>Diploma in Electronics & Telecommunication Engineering</h3>
+                <p>Sou Venutai Chavan Polytechnic, Pune</p>
+                <small>Percentage: 85.12%</small>
               </div>
             </div>
           </div>
           <div className="certifications reveal reveal-delay">
-            <h3>Certifications</h3>
+            <h3>Current learning</h3>
             {[
-              ["01", "Google Data Analytics", "Coursera · 2023"],
-              ["02", "Python for Data Science", "IBM · 2023"],
-              [
-                "03",
-                "Machine Learning Specialisation",
-                "DeepLearning.AI · 2024",
-              ],
-            ].map(([number, title, platform]) => (
+              ["01", "Programming", "Python · MySQL / SQL"],
+              ["02", "Tools", "Power BI · Jupyter · Git/GitHub · VS Code"],
+              ["03", "Foundations", "Statistics · Probability · Machine learning · AI"],
+            ].map(([number, title, details]) => (
               <div className="cert-item" key={title}>
                 <span>{number}</span>
                 <div>
                   <strong>{title}</strong>
-                  <small>{platform}</small>
+                  <small>{details}</small>
                 </div>
-                <a
-                  href="#contact"
-                  aria-label={`Ask for ${title} certificate link`}
-                >
-                  <ArrowUpRight />
-                </a>
+                {title === "Foundations" && <small>Pursuing Data Science with AI</small>}
               </div>
             ))}
           </div>
@@ -539,19 +537,18 @@ function Resume() {
         </div>
         <div className="resume-action">
           <p>
-            Education, experience, and the things I’m building next, in one neat
-            document.
+            A concise overview of my background, skills, and project work.
           </p>
           <a
             className="button button-light"
-            href="/assets/Harshvardhan-Resume.pdf"
+            href="/assets/personalized/social/Resume.pdf"
             download
           >
             Download resume <ArrowDownToLine />
           </a>
           <a
             className="resume-view"
-            href="/assets/Harshvardhan-Resume.pdf"
+            href="/assets/personalized/social/Resume.pdf"
             target="_blank"
             rel="noreferrer"
           >
@@ -575,56 +572,37 @@ function Contact() {
             <em>or a good problem?</em>
           </h2>
           <p>
-            I’m always interested in thoughtful teams, useful products, and
-            conversations about data.
+            I’m building a data analytics portfolio and currently learning
+            machine learning. Reach out to discuss my projects or connect about
+            data work.
           </p>
-          <a className="contact-email" href="mailto:hello@example.com">
-            hello@example.com <ArrowUpRight />
+          <a
+            className="contact-email"
+            href="https://www.linkedin.com/in/harshwardhanpatil2208"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Connect on LinkedIn <ArrowUpRight />
           </a>
-          <div className="location">
-            <MapPin />
-            <span>Based in India · Working globally</span>
-          </div>
         </Reveal>
         <Reveal delay className="contact-form">
-          <form action="https://formspree.io/f/your-form-id" method="POST">
-            <label htmlFor="name">
-              Name <span>*</span>
-            </label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Your name"
-              required
-            />
-            <label htmlFor="email">
-              Email <span>*</span>
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="you@company.com"
-              required
-            />
-            <label htmlFor="message">
-              Message <span>*</span>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="Tell me a little about it..."
-              required
-            />
-            <button className="button button-primary" type="submit">
-              Send message <Send />
-            </button>
-            <p className="form-note">
-              Formspree placeholder: replace the form action with your endpoint.
-            </p>
-          </form>
+          <h3>Elsewhere</h3>
+          <a
+            className="button button-primary"
+            href="https://github.com/Harsh220801"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Explore GitHub projects <Code2 />
+          </a>
+          <a
+            className="button button-text"
+            href="https://www.linkedin.com/in/harshwardhanpatil2208"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn profile <BriefcaseBusiness />
+          </a>
         </Reveal>
       </div>
     </section>
@@ -638,13 +616,13 @@ function Footer() {
         <Brand />
         <p>
           Designed & built with curiosity · © {new Date().getFullYear()}{" "}
-          Harshvardhan
+          Harshwardhan
         </p>
         <div className="footer-links">
-          <a href="https://github.com" aria-label="GitHub">
+          <a href="https://github.com/Harsh220801" aria-label="GitHub">
             <Code2 />
           </a>
-          <a href="https://www.linkedin.com" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/harshwardhanpatil2208" aria-label="LinkedIn">
             <BriefcaseBusiness />
           </a>
           <a href="#top" aria-label="Back to top">
@@ -690,7 +668,7 @@ export default function App() {
     <>
       <div className="site-loader" aria-hidden="true">
         <span className="loader-mark">
-          HV<span>.</span>
+          HP<span>.</span>
         </span>
       </div>
       <Header dark={dark} setDark={setDark} />
