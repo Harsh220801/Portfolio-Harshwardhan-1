@@ -615,14 +615,13 @@ function Footer() {
       <div className="container footer-inner">
         <Brand />
         <p>
-          Designed & built with curiosity · © {new Date().getFullYear()}{" "}
-          Rutik Bajad
+          Designed by Harshwardhan Patil · © {new Date().getFullYear()}
         </p>
         <div className="footer-links">
-          <a href="https://github.com/RutikBajad" aria-label="GitHub">
+          <a href="https://github.com/Harsh220801" aria-label="GitHub">
             <Code2 />
           </a>
-          <a href="https://www.linkedin.com/in/rutikbajad/" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/harshwardhanpatil2208" aria-label="LinkedIn">
             <BriefcaseBusiness />
           </a>
           <a href="#top" aria-label="Back to top">
